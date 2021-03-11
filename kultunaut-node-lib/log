@@ -1,0 +1,16 @@
+
+function log(service, method, params) {
+    function Default(service, method) {
+        this.service = {name: service}
+        this.method = {name: method}
+    }
+    function Params(params) {
+        this.params = {params: params}
+    }
+
+    const d = new Default(service, method, params)
+    console.log("KULTUNAUT API 🤖");
+    console.count("Number of "+service + " "+ method+" calls")
+    console.table(new Default(service, method))
+    console.table(new Params(params))
+}

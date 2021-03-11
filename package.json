@@ -1,0 +1,22 @@
+{
+  "name": "kultunaut-node-library",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gogoo-Org/Kultunaut-Node-Library.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gogoo-Org/Kultunaut-Node-Library/issues"
+  },
+  "homepage": "https://github.com/Gogoo-Org/Kultunaut-Node-Library#readme",
+  "description": "",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
