@@ -1,5 +1,7 @@
 # Kultunaut Node Libary 
 
+![npm](https://img.shields.io/npm/v/kultunaut-node-library)
+
 ## Requirements
 
 Node 12 or higher.
