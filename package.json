@@ -3,7 +3,8 @@
   "version": "1.2.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "docs": "./node_modules/.bin/jsdoc kultunaut-node-lib/events.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "description": "",
   "dependencies": {
     "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.6.6"
   }
 }

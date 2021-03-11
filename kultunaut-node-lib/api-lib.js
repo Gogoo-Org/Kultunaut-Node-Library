@@ -7,18 +7,17 @@ async function getCredentials() {
         method: 'POST',
         body: process.env.credentials
     });
-    const res = await response.json();
-    return res.access_token
+    return (await response.json()).access_token
 }
 
 async function call(route) {
+    console.log("call")
     const response = await fetch(BASE + route, {
         headers: {
             Authorization: await getCredentials()
         }
     });
-    const res = await response.json();
-    return res
+    return await response.json();
 }
 
 
