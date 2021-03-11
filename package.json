@@ -1,9 +1,9 @@
 {
   "name": "kultunaut-node-library",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node ./test/index.js",
     "docs": "./node_modules/.bin/jsdoc kultunaut-node-lib/events.js --destination docs"
   },
   "repository": {

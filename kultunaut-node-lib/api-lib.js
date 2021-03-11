@@ -11,7 +11,6 @@ async function getCredentials() {
 }
 
 async function call(route) {
-    console.log("call")
     const response = await fetch(BASE + route, {
         headers: {
             Authorization: await getCredentials()
