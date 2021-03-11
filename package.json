@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "docs": "./node_modules/.bin/jsdoc kultunaut-node-lib/events.js"
+    "docs": "./node_modules/.bin/jsdoc kultunaut-node-lib/events.js --destination docs"
   },
   "repository": {
     "type": "git",
