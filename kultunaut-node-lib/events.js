@@ -81,6 +81,7 @@ exports.search = async ({ lat, lon, radius, enddate, startdate, categories }) =>
         const localParams = params + '&pagesize=' + LIST_MAX_SIZE + fieldsList(page)
         const result = ((await api(localParams)).result)
         const filteredList  = result.reduce((acc, item) => {
+            //Some result might have malformed Tags
             if(!item.Tags) return acc
             var predicate = true
             //Check if the event has one or more of the tags we are searching (if we are searching)

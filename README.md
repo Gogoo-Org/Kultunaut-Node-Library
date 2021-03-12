@@ -17,9 +17,9 @@ Node 12 or higher.
 Install the package with:
 
 ```sh
-npm install stripe --save
+npm install kultunaut-node-library
 # or
-yarn add stripe
+yarn add kultunaut-node-library
 ```
 
 ## Usage
