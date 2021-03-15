@@ -24,11 +24,13 @@ yarn add kultunaut-node-library
 
 ## Usage
 
-The package needs to be configured with your account:
+The package should be configured with a user account:
 
 <!-- prettier-ignore -->
 ```js
-process.env.credentials
+import { setCredentials } from "kultunaut-node-library"
+
+setCredentials(uniqeUserID)
 ```
 
 <!-- prettier-ignore -->
