@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: api-lib.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,39 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: api-lib.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>const fetch = require('node-fetch')
+const {setCredentials} = require("./credentials")
+const BASE = 'https://www.kultunaut.dk/perl/'
 
+async function call(route) {
+    console.log("api call")
+    const credentials = process.env.userCredentials || await setCredentials()
+    const response = await fetch(BASE + route, {
+        headers: {
+            Authorization: credentials
+        }
+    });
+    return await response.json();
+}
 
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+/**
+ * Calls the api
+ * @param {string} route parameters in addition to the base url
+ */
+exports.api = async (route) => {
+    return await call('api2/' + route)
+}</code></pre>
+        </article>
+    </section>
 
 
 

@@ -94,9 +94,212 @@
     
 
     
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id="LIST_MAX_SIZE"><span class="type-signature">(constant) </span>LIST_MAX_SIZE<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Search events by longitude, latitude, radius, start- and end-date. Order by startdate. Get a list of up to 100 items.
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="events.js.html">events.js</a>, <a href="events.js.html#line68">line 68</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+    
 
     
         <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="api"><span class="type-signature"></span>api<span class="signature">(route)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Calls the api
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>route</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">parameters in addition to the base url</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api-lib.js.html">api-lib.js</a>, <a href="api-lib.js.html#line20">line 20</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         
             
@@ -527,7 +730,7 @@ The lenght is dynamic, either it is shorter than 2 x FEED_DEFAULT_LENGTH
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="events.js.html">events.js</a>, <a href="events.js.html#line36">line 36</a>
+        <a href="events.js.html">events.js</a>, <a href="events.js.html#line35">line 35</a>
     </li></ul></dd>
     
 
@@ -563,7 +766,7 @@ The lenght is dynamic, either it is shorter than 2 x FEED_DEFAULT_LENGTH
     
 
     
-    <h4 class="name" id="search"><span class="type-signature"></span>search<span class="signature">(lat, lon, radius, enddate<span class="signature-attributes">opt</span>, startdate<span class="signature-attributes">opt</span>, categories<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="setCredentials"><span class="type-signature"></span>setCredentials<span class="signature">(route)</span><span class="type-signature"></span></h4>
     
 
     
@@ -571,7 +774,7 @@ The lenght is dynamic, either it is shorter than 2 x FEED_DEFAULT_LENGTH
 
 
 <div class="description">
-    Search events by longitude, latitude, radius, start- and end-date. Order by startdate. Get a list of up to 100 items.
+    Calls the user api
 </div>
 
 
@@ -595,8 +798,6 @@ The lenght is dynamic, either it is shorter than 2 x FEED_DEFAULT_LENGTH
         <th>Type</th>
 
         
-        <th>Attributes</th>
-        
 
         
 
@@ -609,192 +810,23 @@ The lenght is dynamic, either it is shorter than 2 x FEED_DEFAULT_LENGTH
 
         <tr>
             
-                <td class="name"><code>lat</code></td>
+                <td class="name"><code>route</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type">id</span>
 
 
             
             </td>
 
             
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
 
             
 
-            <td class="description last">latitude</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>lon</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">longitude</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>radius</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">theradius</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>enddate</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">how events starting before date, format: dd-mm-yyyy, default current day + 180 days (OPTIONAL)</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>startdate</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">show events ending after date, format: dd-mm-yyyy, default current day (OPTIONAL)</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>categories</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array.&lt;string></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">show events only having one or more of these categories (OPTIONAL)</td>
+            <td class="description last">Takes a userid and sends this user id to kultuant and stores it in this api service db</td>
         </tr>
 
     
@@ -835,7 +867,7 @@ The lenght is dynamic, either it is shorter than 2 x FEED_DEFAULT_LENGTH
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="events.js.html">events.js</a>, <a href="events.js.html#line68">line 68</a>
+        <a href="credentials.js.html">credentials.js</a>, <a href="credentials.js.html#line10">line 10</a>
     </li></ul></dd>
     
 
@@ -881,13 +913,13 @@ The lenght is dynamic, either it is shorter than 2 x FEED_DEFAULT_LENGTH
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#getById">getById</a></li><li><a href="global.html#getByIds">getByIds</a></li><li><a href="global.html#listByLocation">listByLocation</a></li><li><a href="global.html#search">search</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#api">api</a></li><li><a href="global.html#getById">getById</a></li><li><a href="global.html#getByIds">getByIds</a></li><li><a href="global.html#LIST_MAX_SIZE">LIST_MAX_SIZE</a></li><li><a href="global.html#listByLocation">listByLocation</a></li><li><a href="global.html#setCredentials">setCredentials</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Thu Mar 11 2021 20:46:28 GMT+0100 (Central European Standard Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Mon Mar 15 2021 15:55:55 GMT+0100 (Central European Standard Time)
 </footer>
 
 <script> prettyPrint(); </script>

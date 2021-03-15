@@ -11,7 +11,7 @@ const FEED_DEFAULT_LENGTH = 100
  */
 exports.getById = async (id) => {
     const params = 'EventId?Id=' + id
-    return (await api(params)).result[0]
+    return (await api(params)).result
 }
 
 /**

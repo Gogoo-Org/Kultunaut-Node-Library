@@ -1,24 +1,17 @@
 const fetch = require('node-fetch')
-
+const {setCredentials} = require("./credentials")
 const BASE = 'https://www.kultunaut.dk/perl/'
 
-async function getCredentials() {
-    const response = await fetch("https://www.kultunaut.dk/perl/oauth2/token", {
-        method: 'POST',
-        body: process.env.credentials
-    });
-    return (await response.json()).access_token
-}
-
 async function call(route) {
+    console.log("api call")
+    const credentials = process.env.userCredentials || await setCredentials()
     const response = await fetch(BASE + route, {
         headers: {
-            Authorization: await getCredentials()
+            Authorization: credentials
         }
     });
     return await response.json();
 }
-
 
 /**
  * Calls the api
