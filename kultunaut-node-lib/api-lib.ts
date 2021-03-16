@@ -1,22 +1,21 @@
-const fetch = require('node-fetch')
-const {setCredentials} = require("./credentials")
+import fetch from 'node-fetch'
+import { setCredentials } from "./credentials";
 const BASE = 'https://www.kultunaut.dk/perl/'
 
-async function call(route) {
-    console.log("api call")
+async function call(route:String): Promise<any>{
     const credentials = process.env.userCredentials || await setCredentials()
     const response = await fetch(BASE + route, {
         headers: {
             Authorization: credentials
         }
     });
-    return await response.json();
+    return (await response.json()).result
 }
 
 /**
  * Calls the api
  * @param {string} route parameters in addition to the base url
  */
-exports.api = async (route) => {
+export async function api(route:string):Promise<any>{
     return await call('api2/' + route)
 }
