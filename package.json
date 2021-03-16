@@ -1,6 +1,6 @@
 {
   "name": "kultunaut-node-library",
-  "version": "1.4.0",
+  "version": "1.4.3",
   "main": "index.js",
   "scripts": {
     "start": "node ./test/index.js",
